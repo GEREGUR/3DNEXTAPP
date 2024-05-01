@@ -8,7 +8,7 @@ import { useProgress, Html } from '@react-three/drei'
 
 function Loader(){
     const {progress, active} = useProgress()
-    return <Html center>{progress.toFixed(1)}%Loaded</Html>
+    return <Html className='w-full min-h-screen flex items-center justify-center' center>{progress.toFixed(1)}%{" "}Loaded</Html>
 
 }
 
